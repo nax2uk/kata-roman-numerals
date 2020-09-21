@@ -31,11 +31,9 @@ describe Roman_Numerals do
   it "returns IX when passed 9" do
     expect(Roman_Numerals.new.convert(9)).to eq("IX")
   end
-  it "returns X when passed 10" do
-    expect(Roman_Numerals.new.convert(10)).to eq("X")
-  end
 
-  it "returns X + single digit num when passed 11-19" do
+  it "returns X + single digit num when passed 10-19" do
+    expect(Roman_Numerals.new.convert(10)).to eq("X")
     expect(Roman_Numerals.new.convert(11)).to eq("XI")
     expect(Roman_Numerals.new.convert(12)).to eq("XII")
     expect(Roman_Numerals.new.convert(13)).to eq("XIII")
